@@ -1,3 +1,4 @@
 
 # ignore mod file
 go.mod
+go.sum
