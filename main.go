@@ -19,7 +19,7 @@ var (
     // list of `boidCount` elements of (pointer) Boid type
     boids   [boidCount]*Boid
     boidMap [screenWidth + 1][screenHeight + 1]int
-    lock = sync.Mutex{}
+    rwLock = sync.RWMutex{}
 )
 
 type Game struct{}
